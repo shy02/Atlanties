@@ -12,19 +12,16 @@ EditorBuildSettings:
     path: Assets/Scenes/Start/StartDisplay.unity
     guid: 6de0089a607b6f14a9f3a0ad099d8117
   - enabled: 1
-    path: Assets/Scenes/Play/Play_Sample.unity
-    guid: b592f591cd100cd40ac099d65214ed21
-  - enabled: 1
     path: Assets/Scenes/Play/ModeSelect.unity
     guid: d38608a2abe678d4b9e164bbb8065cef
   - enabled: 1
     path: Assets/Scenes/Service/Character.unity
     guid: 89b7dcf634ab4ac4598e585505d6aa41
   - enabled: 1
-    path: Assets/Scenes/Play/InfiniteMoe.unity
+    path: Assets/Scenes/Play/InfiniteMode.unity
     guid: ef2179063f464ba4cb62a198a2f657fe
   - enabled: 1
-    path: Assets/Scenes/Play/StoryMode.unity
+    path: Assets/Scenes/Play/Chapter/StoryMode.unity
     guid: 67428d4bed98b9a48abbc2923ec62900
   - enabled: 1
     path: Assets/Scenes/Service/Option.unity
@@ -32,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Service/Store.unity
     guid: 03443dbbe2375f44bb80099c05f21547
+  - enabled: 1
+    path: Assets/Scenes/Play/Chapter/StageSelect.unity
+    guid: cbb89abc9146d91428027ae2bde5f67c
   - enabled: 1
     path: Assets/Scenes/Start/Loby.unity
     guid: 9d473119fb5119f4f97a751275b8078d

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class StageSelect_UI : MonoBehaviour
 {
     public void Press_Stroy_Mode_btn(){
-        SceneManager.LoadScene("StoryMode");
+        SceneManager.LoadScene("StageSelect");
     }
 
     public void Press_Infinite_Mode_btn(){
@@ -15,5 +15,8 @@ public class StageSelect_UI : MonoBehaviour
 
     public void Press_Back_Btn(){
         SceneManager.LoadScene("Loby");
+    }
+    public void Press_Back_Mode_Btn(){
+        SceneManager.LoadScene("ModeSelect");
     }
 }

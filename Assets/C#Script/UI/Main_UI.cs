@@ -8,7 +8,12 @@ public class Main_UI : MonoBehaviour
     int maxHeart, recently_Heart, coin, cash, LV;
     float exp_value, maxexp;
     string name, call_Player;//칭호
-
+    
+    [Header("Service")]
+    [SerializeField] GameObject CharacterDeco;
+    [SerializeField] GameObject Medal_object;
+    bool isOpen_ch = false;
+    bool isOpen_Medal = false;
     [Header("Text_Object")]
     [SerializeField] Text Player_name;
     [SerializeField] Text heart_txt;
@@ -52,12 +57,29 @@ public class Main_UI : MonoBehaviour
     }
 
     public void OptionButton(){
-        SceneManager.LoadScene("Option");
     }
     public void Medal(){
+        if(!isOpen_Medal){
+            isOpen_Medal = true;
+            Medal_object.SetActive(true);
+            isOpen_ch = false;
+            CharacterDeco.SetActive(false);
+        }else{
+            isOpen_Medal = false;
+            Medal_object.SetActive(false);
+        }
     }
     public void Character(){
-        SceneManager.LoadScene("Character");
+        if(!isOpen_ch){
+        isOpen_ch = true;
+        CharacterDeco.SetActive(true);
+        isOpen_Medal = false;
+        Medal_object.SetActive(false);
+        }
+        else{
+            isOpen_ch = false;
+            CharacterDeco.SetActive(false);
+        }
     }
     public void Store(){
         SceneManager.LoadScene("Store");
