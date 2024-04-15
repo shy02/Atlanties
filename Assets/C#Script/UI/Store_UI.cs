@@ -6,10 +6,10 @@ public class Store_UI : MonoBehaviour
 {
     static int storemenu_val = -1;
     Transform ItemView;
-    public List<GameObject> Item_arr = new List<GameObject>();
+    List<GameObject> Item_arr = new List<GameObject>();
 
     void Start(){
-        ItemView = transform.GetChild(1).GetChild(0);
+        ItemView = transform.GetChild(1).GetChild(0).GetChild(0);
         for(int i = 0; i < ItemView.childCount; i++){
             Item_arr.Add(ItemView.GetChild(i).gameObject);
             Item_arr[i].SetActive(false);

@@ -8,6 +8,7 @@ TagManager:
   - Obstacle
   - Coin
   - Item
+  - Pet
   layers:
   - Default
   - TransparentFX
